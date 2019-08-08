@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu');
+}
+@font-face {
+font-family: Ubuntu-Bold;
+src: url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    /*flex*/
+    display:flex;
+    flex-direction: column;
+}
+
+body > header{
+    background: black;
+}
+
+.login{
+    background: #fff;
+    width:100%;
+    position: relative;
+    top:100px;
+    /*flex*/
+    display:flex;
+    justify-content: center;
+}
+
+.container{
+    width:390px;
+    /*flex*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    /*flex*/
+    display:flex;
+    justify-content: center;
+}
+
+.header-name{
+    margin-bottom:45px;
+    /*font*/
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-size: 30px;
+    color:#30265d;
+}
+
+
+/*===INPUT===*/
+.input-container{
+    height:65px;
+    margin:10px 0;
+    background: #eee;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    /*flex*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width:310px;
+    height:20px;
+    background: #eee;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    /*font*/
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-size: 20px;
+    color:#30265d;
+}
+
+.input::-webkit-input-placeholder {
+    font-family: 'Ubuntu-Regular', sans-serif;
+    font-size: 18px;
+    color:#999;
+}
+.input:-moz-placeholder {
+    font-family: 'Ubuntu-Regular', sans-serif;
+    font-size: 18px;
+    color:#999;
+}
+
+
+
+/*===USER-SETT===*/
+.user-sett{
+     /*flex*/
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/*===CHECK===*/
+.label-check{
+    cursor: pointer;
+    height:30px;
+    /*flex*/
+    display:flex;
+    align-items: center;
+}
+
+.check{
+    display:none;
+}
+
+.new_check{
+    position: relative;
+    width:16px;
+    height:16px;
+    border: 2px solid #716ff3;
+    border-radius: 3px;
+}
+
+.check:checked+.new_check{
+    background: url(./img/2714.png) no-repeat center;
+}
+
+.label-text{
+    margin:7px;
+    /*font*/
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-size: 16px;
+    color: #999;
+}
+
+
+/*===link==*/
+.link{
+    text-decoration: none;
+    /*font*/
+    font-family: 'Ubuntu-Regular', sans-serif;
+    font-size: 16px;
+    color:#716ff3;
+    /*flex*/
+    display:flex;
+    align-items: center;
+}
+
+.link:hover{
+    color: #30265d;
+}
+
+/*==submit==*/
+.submit{
+    width:100%;
+    height:60px;
+    background: #716ff3;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    /*font*/
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
